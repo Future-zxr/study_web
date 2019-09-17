@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 class Sex(models.Model):
-    pass
+    sex_name = models.CharField(max_length=255,unique=True,null=False)
 
 class Icon(models.Model):
-    pass
+    icon_img = models.CharField(max_length=255,unique=True,null=False)
